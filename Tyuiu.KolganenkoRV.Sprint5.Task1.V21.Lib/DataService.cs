@@ -16,7 +16,7 @@ namespace Tyuiu.KolganenkoRV.Sprint5.Task1.V21.Lib
 
             double y;
             string str;
-            for (int i = startValue; i < stopValue; i++)
+            for (int i = startValue; i <= stopValue; i++)
             {
                 y = Math.Round(((2 * i - 3) / (Math.Cos(i) - 2 * i)) + 5 * i - Math.Sin(i), 2);
                 str = Convert.ToString(y);
