@@ -7,13 +7,7 @@ namespace Tyuiu.KolganenkoRV.Sprint5.Task2.V30.Lib
     {
         public string SaveToFileTextData(int[,] matrix)
         {
-
-            string directory = @"C:\Users\Ринат\source\repos\Tyuiu.KolganenkoRV.Sprint5\Tyuiu.KolganenkoRV.Sprint5.Task2.V30\bin\Debug\net8.0\";
-            if (!Directory.Exists(directory))
-            {
-                Directory.CreateDirectory(directory);
-            }
-            string path = Path.Combine(directory, "OutPutFileTask2.csv");
+            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask2.csv");
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             if (fileExists)
