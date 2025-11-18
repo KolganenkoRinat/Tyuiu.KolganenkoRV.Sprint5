@@ -1,6 +1,6 @@
-﻿using Tyuiu.KolganenkoRV.Sprint5.Task2.V30.Lib;
+﻿using Tyuiu.KolganenkoRV.Sprint5.Task3.V9.Lib;
 
-namespace Tyuiu.KolganenkoRV.Sprint5.Task2.V30.Test
+namespace Tyuiu.KolganenkoRV.Sprint5.Task3.V9.Test
 {
     [TestClass]
     public sealed class DataServiceTest
@@ -8,7 +8,7 @@ namespace Tyuiu.KolganenkoRV.Sprint5.Task2.V30.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = @"C:\Users\Ринат\AppData\Local\Temp\OutPutFileTask2.csv";
+            string path = @"C:\Users\Ринат\AppData\Local\Temp\OutPutFileTask3.bin";
             FileInfo fileinfo = new FileInfo(path);
             bool fileExists = fileinfo.Exists;
             bool wait = true;
