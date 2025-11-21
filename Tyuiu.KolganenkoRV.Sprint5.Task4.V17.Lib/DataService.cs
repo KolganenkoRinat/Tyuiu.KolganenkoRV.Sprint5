@@ -9,7 +9,8 @@ namespace Tyuiu.KolganenkoRV.Sprint5.Task4.V17.Lib
         {
             string strX = File.ReadAllText(path);
             double x = double.Parse(strX, CultureInfo.InvariantCulture);
-            double res = Math.Round(Math.Sin(2.0 / 3.0 * x) + Math.Pow(x, 2), 3);
+            double z = Math.Sin(2.0 / (3.0 * x)) + Math.Pow(x, 2);
+            double res = Math.Round(z, 3);
             return res;
         }
     }
